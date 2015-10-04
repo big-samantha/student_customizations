@@ -13,6 +13,7 @@ class student_customizations::zsh {
 
   file { '.zshrc':
     ensure => link,
+    target => '/root/dotfiles/home/.zshrc',
     path   => '/root/.zshrc',
   }
 
@@ -21,8 +22,3 @@ class student_customizations::zsh {
     require => Package['zsh'],
   }
 }
-  
-
-
-
-
