@@ -13,7 +13,7 @@ class student_customizations::vim {
     ensure   => present,
     path     => '/root/.vim/bundle/Vundle.vim',
     provider => git,
-    source   => 'https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim',
+    source   => 'https://github.com/VundleVim/Vundle.vim.git', 
   }
   file { '.vimrc':
     ensure  => link,
